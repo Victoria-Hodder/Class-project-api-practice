@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <head>
+        <title>Museum Search Berlin</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="{{ url_for('static', filename='museumsearchlogo.svg')}}" class="logo_image">
+                </div>
+                <div class="col-md-8 text-center mt-5 pr-5">
+                    <h1>Museum Search Berlin</h1>
+                    <h2>Whether you are looking for an exciting day out or a place to hide 
+                        from the rain, we have the museum for you!</h2>
+                    <h3>How can we help you today?</h3>
+                    <!--Drop down menu-->
+                    <div class="dropdown dropdown_menu">
+                        <p>I'm looking for</p>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Something
+                    </button>
+                    
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown dropdown_menu">
+                        <p>I'm looking for</p>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Something
+                    </button>
+                    
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown dropdown_menu">
+                        <p>I'm looking for</p>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Something
+                        </button>
+                        
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown_menu">
+                            <p>I'm looking for</p>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Something
+                        </button>
+                        
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-md-12 offset-md-6">
+                    <form action="/search" class="pt-5">
+                    <!--  <input type="text" name="query">  -->
+                    <button type="submit" id="searchbutton">Let's go!</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+
+<!--
+        <div class="container-fluid">
+            <div class="row text-center align-middle">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="pt-5">Welcome to Museum Search Berlin!</h1>
+                    <p class="py-5">Whether you are looking for an exciting day out or a place to hide
+                        from the rain, we have the museum for you! </p>
+                    <h2 class="pb-3">How can we help you today?</h2>
+                    
+                    <form action="/search" class="pb-5">
+                        <input type="text" name="query">
+                        <button type="submit" id="searchbutton">Let's go!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    -->
+
+    <!--Here we will need the for loop for displaying the data in a 
+    nice and pretty way-->
+
+
+    
+<!--
+    <div class="container">
+        <div class="row">
+            <button class="category-button" data-filter="all">All</button>
+                {% for exhibit in exhibits %}
+                <button class="category-button" data-filter="{{ exhibit.keyword | replace(" ","-")  }}">{{ exhibit.keyword }}</button>
+                {% endfor %}
+        </div>
+        <div class="row">        
+            {% for exhibit in exhibits %}
+                <div class="col-md-4 mb-5 text-center filter {{ exhibit.keyword | replace(" ","-") }}">
+                    <h2>{{ exhibit.title }}</h2>
+                    <img src="{{ exhibit.imgurl }}" class="img-fluid">
+                    <p><strong>{{ exhibit.museum }}</strong></p>
+                    <p> {{ exhibit.subtitle }} </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+-->
+
+    </body>
+
+
+{% endblock %}

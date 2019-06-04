@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<html>
+    <head>
+        <title>Search Results</title>
+    </head>
+
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <h1>Search Results</h1>
+                </div>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <ul>
+                {% for result in results %}
+                <li>
+                    <strong>{{ result.museum }}</strong> | {{ result.subtitle }}
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>        
+            
+    </body>
+</html>
+
+<!--layout questions:
+    How would I display this in boxes if there is more than 
+    one result using bootstrap??
+    Could we provide clickable links so they could go straight to the museum?
+    Could we display this in a table?
+
+    Design: https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311
+-->
+
+
+{% endblock %}
+

@@ -1,0 +1,6 @@
+/__pycache__
+/.vscode
+/venv
+/old code.txt
+/queries.py
+/templates/experiment.html
