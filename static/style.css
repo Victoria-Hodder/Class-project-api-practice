@@ -15,10 +15,33 @@ h2 {
     color: rgb(67, 67, 212);
 }
 
+.center {
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*margin: auto;
+    width: 100%;
+    line-height: 100%;
+    border: 3px solid green;
+    padding: 10px; */
+}
+
 
 .dropdown_menu {
     margin: 10px 0 0 0;
     display: inline-block;
-    float: left;
+    float: center;
     width: 20%
+}
+
+#searchbutton {
+    background-color: rgb(192, 192, 192); 
+    margin-left: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
+    display: inline;
 }

@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid center">
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img src="{{ url_for('static', filename='museumsearchlogo.svg')}}" class="logo_image">
@@ -70,15 +70,21 @@
                     </div>
                 </div>
 
-                <div class="row col-md-12 offset-md-6">
-                    <form action="/search" class="pt-5">
+                <div class="col text-center mt-5">
+                    <form action="/search">
                     <!--  <input type="text" name="query">  -->
                     <button type="submit" id="searchbutton">Let's go!</button>
                     </form>
                 </div>
-                
             </div>
         </div>
+
+        <!--<div class="container-fluid center">
+            <div class="row">
+                
+            </div>
+        </div> -->
+                
 
 
 <!--
