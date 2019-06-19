@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- this should be one of the last files added in the head as it has all of your custom style changes -->
     <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet"> 
+    <script src="main.js"></script> <!-- This file doesn't exist and but it should be just befor the closing body command. -->
 </head>
 
 <body>
@@ -30,7 +30,8 @@
     crossorigin="anonymous"></script>
     <!--caregory-filter-js-->
     <script src="{{ url_for('static', filename='category-filter.js')}}"></script>
-    <script>
+    <!-- inline script code below should be avoided if at all possible. Not terrible that it is here but it might be confusing if the project grows larger -->
+    <script> 
         $('.category-button').categoryFilter();
     </script>
 </body>

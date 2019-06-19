@@ -1,3 +1,5 @@
+/* you could set a font-family for the body of the page and then just over ride the H1 and H2 tags */
+
 logo_image {
     width: 700px;
 }
@@ -21,7 +23,7 @@ p {
     font-family: 'Lato', sans-serif;  
 }
 
-.center {
+.center { /* You should be able to use the bootstrap text-center class to center the text */
     margin: 0;
     position: absolute;
     top: 40%;
@@ -37,7 +39,7 @@ p {
     width: 20%;
     font-family: 'Lato', sans-serif;  
 }
-
+/* This could cause problems on different screen sizes. You could overload the btn-primary class instead of creating your own button css. Be lazy :)*/
 #searchbutton {
     background-color: rgb(192, 192, 192); 
     margin-left: 30%;
