@@ -1,24 +1,18 @@
+body {
+    font-family: 'Lato', sans-serif;  
+}
+
 logo_image {
     width: 700px;
 }
 
 h1 {
     color: blue;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 h2 {
     color: rgb(67, 67, 212);
-    font-family: 'Roboto', sans-serif;
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;  
-}
-
-p {
-    font-family: 'Lato', sans-serif;  
 }
 
 .center {
@@ -38,7 +32,7 @@ p {
     font-family: 'Lato', sans-serif;  
 }
 
-#searchbutton {
+.btn-primary {
     background-color: rgb(192, 192, 192); 
     margin-left: 30%;
     padding-left: 25%;
