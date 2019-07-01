@@ -1,8 +1,7 @@
+
 body {
     font-family: 'Lato', sans-serif;  
 }
-/* check git for roboto */
-
 
 logo_image {
     width: 700px;
@@ -17,7 +16,7 @@ h2 {
     color: rgb(67, 67, 212);
 }
 
-.center {
+.center { /* You should be able to use the bootstrap text-center class to center the text */
     margin: 0;
     position: absolute;
     top: 40%;
@@ -34,8 +33,9 @@ h2 {
     font-family: 'Lato', sans-serif;  
 }
 
+
 .btn-primary {
-    background-color: grey;
+    background-color: rgb(192, 192, 192); 
     margin-left: 30%;
     padding-left: 25%;
     padding-right: 25%;
