@@ -47,3 +47,8 @@ logo_image {
     background-color: #75d7a1;
     color: white;
 }
+
+.form-group p,
+.form-group select {
+  display: inline;
+}
