@@ -1,22 +1,21 @@
-
 body {
     font-family: 'Lato', sans-serif;  
 }
 
-logo_image {
-    width: 700px;
-}
-
 h1 {
-    color: blue;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 h2 {
-    color: rgb(67, 67, 212);
+    font-family: 'Roboto', sans-serif;
 }
 
-.center { /* You should be able to use the bootstrap text-center class to center the text */
+logo_image {
+    width: 800px;
+}
+
+.center {
     margin: 0;
     position: absolute;
     top: 40%;
@@ -34,8 +33,9 @@ h2 {
 }
 
 
-.btn-primary {
-    background-color: rgb(192, 192, 192); 
+.btn-default {
+    background-color: #75d7a1; 
+    color: black;
     margin-left: 30%;
     padding-left: 25%;
     padding-right: 25%;
