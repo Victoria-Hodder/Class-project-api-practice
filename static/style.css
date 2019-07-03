@@ -42,3 +42,8 @@ logo_image {
     display: inline;
     font-family: 'Lato', sans-serif;  
 }
+
+.footer-background {
+    background-color: #75d7a1;
+    color: white;
+}

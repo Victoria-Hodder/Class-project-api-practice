@@ -15,8 +15,23 @@
 </head>
 
 <body>
+    <main>
 
     {% block content %}{% endblock %}
+    </main>
+    <footer class="container-fluid">
+        <div class="row footer-background pt-3 pb-1 mt-5">
+            <div class="col-md-1 ml-5">
+                <p>About Us</p>
+            </div>
+            <div class="col-md-1">
+                <p>Contact Us</p>
+            </div>
+            <div class="col-md-2 offset-md-7">
+                <p>Copyright 2019</p>
+            </div>
+        </div>
+    </footer>
 
      <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

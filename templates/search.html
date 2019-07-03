@@ -3,24 +3,34 @@
 
 
         <div class="container">
-            <div class="row">
-                <h1>Search Results</h1>
+            <div class="row text-center">
+                <div class="col-md-3 offset-md-1 text-center">
+                        <img src="{{ url_for('static', filename='museumsearchlogo.svg')}}" class="logo_image">
                 </div>
+                <div class="col-md-5 mt-5 ml-5">
+                    <h1>MuseumSearchBerlin</h1>
+                    <h2>The place for museums in Berlin</h2>
+                </div>  
+            </div>  
         </div> 
+
         <div class="container">
             <div class="row">
-                <div class="col-md-5 offset-md-1">
-                <ul>
-                    {% for result in results %}
-                        <li>
-                            <strong>{{ result.museum }}</strong> | {{ result.subtitle }}
-                        </li>
-                    {% endfor %}     
-                </ul>
+                <h2>You searched for...</h2>
+            </div>
+            <div class="row mt-5 mb-3">
+                <h3><strong>{X no.} results found</strong></h3>
+            </div>    
+            <div class="row">
 
-        <!--Reread old code in snippets/index.html to find out how to do bootstrap 
-            layout in a nice and pretty way -->
-                </div>
+                <div class="row">        
+                        {% for result in results %}
+                            <div class="col-md-6 mb-5 text-center">
+                                <h3>{{ result.museum }}</h3>
+                                <img src="{{ result.imgurl }}" class="img-fluid">
+                            </div>
+                        {% endfor %}
+                    </div>
             </div>
         </div>        
 
