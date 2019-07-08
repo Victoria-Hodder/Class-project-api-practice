@@ -29,7 +29,7 @@ def get_search_results():
         results = rows
     return render_template('search.html', results=results)
 
-
+# Below: in init py file
 
 host = "frauenloop.cpvjwjmdvltu.us-east-2.rds.amazonaws.com"
 dbname = "frauenloop"
@@ -54,12 +54,6 @@ try:
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(rows)
 
-    #cur.execute(keywords_query)
-    #row = cur.fetchone()
-    #rows = cur.fetchall()
-    #print("keywords:", rows)
-
-#https://pynative.com/python-postgresql-select-data-from-table/
 
 except:
     print("I am unable to connect to the database")

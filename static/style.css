@@ -11,17 +11,17 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-logo_image {
-    width: 800px;
+.logo_image {
+    width: 400px;
 }
 
-.center {
+/*.center {
     margin: 0;
     position: absolute;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 
 .dropdown_menu {
@@ -46,4 +46,23 @@ logo_image {
 .footer-background {
     background-color: #75d7a1;
     color: white;
+}
+
+.results_title {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    font-weight: 500;
+    font-weight: bold;
+/*    text-shadow: 2px 2px #ffffff;*/
+}
+
+#block {
+    background: #ffffff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
 }
