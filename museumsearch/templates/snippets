@@ -1,0 +1,84 @@
+
+Just have "about us" and "contact us" (within contact us is the impressum,
+and privacy policy within impressum)
+
+Dropdowns need to drawn directly from database (ask Marie). Any tags that we have
+will be the same in the dropdowns.
+This will be easier to add more keywords/content later.
+Waiting for tags/keywords.
+
+
+index.html comments
+
+        <!--<div class="container-fluid center">
+            <div class="row">
+                
+            </div>
+        </div> -->
+                
+.py comments
+    cur.execute(keywords_query)
+    row = cur.fetchone()
+    rows = cur.fetchall()
+    print("keywords:", rows)
+
+https://pynative.com/python-postgresql-select-data-from-table/
+
+
+<!--
+        <div class="container-fluid">
+            <div class="row text-center align-middle">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="pt-5">Welcome to Museum Search Berlin!</h1>
+                    <p class="py-5">Whether you are looking for an exciting day out or a place to hide
+                        from the rain, we have the museum for you! </p>
+                    <h2 class="pb-3">How can we help you today?</h2>
+                    
+                    <form action="/search" class="pb-5">
+                        <input type="text" name="query">
+                        <button type="submit" id="searchbutton">Let's go!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    -->
+
+    <!--Here we will need the for loop for displaying the data in a 
+    nice and pretty way-->
+
+
+    
+<!--
+    <div class="container">
+        <div class="row">
+            <button class="category-button" data-filter="all">All</button>
+                {% for exhibit in exhibits %}
+                <button class="category-button" data-filter="{{ exhibit.keyword | replace(" ","-")  }}">{{ exhibit.keyword }}</button>
+                {% endfor %}
+        </div>
+        <div class="row">        
+            {% for exhibit in exhibits %}
+                <div class="col-md-4 mb-5 text-center filter {{ exhibit.keyword | replace(" ","-") }}">
+                    <h2>{{ exhibit.title }}</h2>
+                    <img src="{{ exhibit.imgurl }}" class="img-fluid">
+                    <p><strong>{{ exhibit.museum }}</strong></p>
+                    <p> {{ exhibit.subtitle }} </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+-->
+
+
+search comments
+
+
+<!--layout questions:
+    How would I display this in boxes if there is more than 
+    one result using bootstrap??
+    Could we provide clickable links so they could go straight to the museum?
+    Could we display this in a table?
+
+    Design: https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311
+-->

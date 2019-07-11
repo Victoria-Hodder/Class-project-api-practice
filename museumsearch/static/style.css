@@ -1,5 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    font-family: 'Lato', sans-serif;  
+    font-family: 'Lato', sans-serif; 
+    padding-bottom: 15%;
 }
 
 h1 {
@@ -13,6 +19,7 @@ h2 {
 
 .logo_image {
     width: 400px;
+    position: relative;
 }
 
 /*.center {
@@ -43,10 +50,19 @@ h2 {
     font-family: 'Lato', sans-serif;  
 }
 
-.footer-background {
+.footer {
     background-color: #75d7a1;
     color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
 }
+
+/*https://stackoverflow.com/questions/3443606/
+make-footer-stick-to-bottom-of-page-correctly*/
 
 .results_title {
     position: absolute;
