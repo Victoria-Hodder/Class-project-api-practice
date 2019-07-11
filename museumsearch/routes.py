@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template, url_for, request
 from museumsearch import app
-from run import cur
+from run import cur, rows, query
 
 @app.route('/')
 def get_index():
