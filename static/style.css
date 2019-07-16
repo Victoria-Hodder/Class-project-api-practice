@@ -1,0 +1,54 @@
+body {
+    font-family: 'Lato', sans-serif;  
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+logo_image {
+    width: 800px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dropdown_menu {
+    margin: 10px 0 0 0;
+    display: inline-block;
+    float: center;
+    width: 20%;
+    font-family: 'Lato', sans-serif;  
+}
+
+
+.btn-default {
+    background-color: #75d7a1; 
+    color: black;
+    margin-left: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
+    display: inline;
+    font-family: 'Lato', sans-serif;  
+}
+
+.footer-background {
+    background-color: #75d7a1;
+    color: white;
+}
+
+.form-group p,
+.form-group select {
+  display: inline;
+}
